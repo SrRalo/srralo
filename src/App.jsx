@@ -73,12 +73,13 @@ const App = () => {
         width="100%" // Ancho del reproductor
         height="100%" // Alto del reproductor
       />
-      
+      <div>Hola mundo</div>
       <div style={{ marginTop: '20px' }}>
         {channels.map((channel) => (
           <button key={channel.name} onClick={() => changeChannel(channel.url)} style={{ margin: '5px' }}>
             {channel.name}
           </button>
+          
         ))}
       </div>
     </div>
